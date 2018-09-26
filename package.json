@@ -1,23 +1,31 @@
 {
   "name": "react-promise",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts-ts": "2.17.0"
-  },
+  "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "test": "jest",
+    "build": "rimraf dist && tsc -p tsconfig.build.json -d"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.1.14",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.10.1",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
+    "jest-enzyme": "^6.1.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.1",
+    "ts-lint": "^4.5.1",
     "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2"
   }
 }
